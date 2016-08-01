@@ -16,7 +16,9 @@ public class FizzBuzz {
 	public void check(int number){
 		if(number%3==0)
 			presentation.print(fizz);
-		else
+		if(number %5==0)
+            presentation.print(buzz );
+		if(number %3!=0 && number%5!=0)
 			presentation.print(((Integer)number).toString());
 		
 			
